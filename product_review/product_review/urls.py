@@ -19,5 +19,6 @@ from searchapp import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', views.search, name='search'),
+    path('', views.SearchView, name='search'),
+    path('/result', views.ResultView, name='result')
 ]
